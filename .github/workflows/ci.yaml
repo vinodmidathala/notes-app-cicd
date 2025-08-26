@@ -51,7 +51,7 @@ jobs:
 
             - name: update deployment file
               run: |
-                sed -i 's|image: .*|image: '"${{ secrets.DOCKER_USERNAME }}"'/myapp:'"${{github.run_id }}"'|g' deployment.yaml
+                sed -i 's|image: .*|image: '"${{ secrets.DOCKER_USERNAME }}"'/myapp:'"${{github.run_id }}"'|g' k8s/deployment.yaml
             - name: git commit
               run: |
                 git config --global user.name 'vinodmidathala'
