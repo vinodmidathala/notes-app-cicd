@@ -54,8 +54,8 @@ jobs:
                 sed -i 's|image: .*|image: '"${{ secrets.DOCKER_USERNAME }}"'/myapp:'"${{github.run_id }}"'|g' deployment.yaml
             - name: git commit
               run: |
-                git config --global user.name 'vinodkumar'
-                git config --global user.email 'vinodkumar@gmail.com
+                git config --global user.name 'vinodmidathala'
+                git config --global user.email 'mvk4459@gmail.com
                 git add deployment.yaml
                 git commit -m 'Update deployment image'
                 git push origin main        
