@@ -56,7 +56,7 @@ jobs:
               run: |
                 git config --global user.name 'vinodmidathala'
                 git config --global user.email 'mvk4459@gmail.com'
-                git add deployment.yaml
+                git add .
                 git commit -m 'Update deployment image'
                 git push origin main        
 
