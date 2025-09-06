@@ -6,7 +6,7 @@ metadata:
  name: notes-app-deployment
 spec:
  selector:
-   # Selector for Pods
+   # Selector for all pods with label
    app: notes-app
  ports:
    # Port Map
